@@ -4,6 +4,15 @@ import { CheckCircle, Users, BedDouble, Square, ShieldCheck, Wifi, Coffee, Clock
 import Link from "next/link";
 import { rooms } from "../types/type";
 import Container from "@/src/components/ui/container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Room Details | The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
 
 
 type Props = {

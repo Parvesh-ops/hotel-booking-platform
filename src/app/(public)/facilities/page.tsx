@@ -2,6 +2,15 @@ import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
 import Image from "next/image";
 import { facilities } from "./types/type";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Facilities | The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
 
 
 const FacilitiesPage = () => {
