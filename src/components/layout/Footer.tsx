@@ -29,12 +29,12 @@ const Footer = () => {
     },
   ]
 
-  const socialLinks = [
-    { icon: <FaFacebookF size={17} />, href: "#" },
-    { icon: <FaTiktok size={17} />, href: "#" },
-    { icon: <FaInstagram size={17} />, href: "#" },
-    { icon: <FaWhatsapp size={17} />, href: "#" },
-  ]
+const socialLinks = [
+  { icon: <FaFacebookF size={17} />, href: "https://www.facebook.com/" },
+  { icon: <FaTiktok size={17} />, href: "https://www.tiktok.com/" },
+  { icon: <FaInstagram size={17} />, href: "https://www.instagram.com/" },
+  { icon: <FaWhatsapp size={17} />, href: "https://wa.me/" },
+];
 
   return (
     <footer className="bg-primary-12">
@@ -66,6 +66,8 @@ const Footer = () => {
               <Link
                 key={index}
                 href={social.href}
+                 target="_blank"
+                 rel="noopener noreferrer"
                 className="text-[#FDFDFD] hover:text-[#C9960C] transition-colors duration-200 border border-[#FDFDFD]/10 hover:border-[#C9960C] p-2"
               >
                 {social.icon}
@@ -88,7 +90,7 @@ const Footer = () => {
                   className="text-[#FDFDFD] text-sm hover:text-[#C9960C] transition-colors duration-200"
                 >
                   {link.label}
-                </Link>
+                </Link> 
               </li>
             ))}
           </ul>
