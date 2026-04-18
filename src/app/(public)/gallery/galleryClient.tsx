@@ -4,9 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
-import { categories, GalleryCategory, galleryImages } from "../types/type";
+import { categories, GalleryCategory, galleryImages } from "./types/type";
 
-const GalleryContent = () => {
+
+const GalleryClient = () => {
   const [activeCategory, setActiveCategory] = useState<GalleryCategory>("ALL");
 
   const filtered =
@@ -60,7 +61,7 @@ const GalleryContent = () => {
             {filtered.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full aspect-[4/3] overflow-hidden group"
+                className="relative w-full aspect-4/3 overflow-hidden group"
               >
                 {/* Image */}
                 <Image
@@ -88,4 +89,4 @@ const GalleryContent = () => {
   );
 };
 
-export default GalleryContent;
+export default GalleryClient;

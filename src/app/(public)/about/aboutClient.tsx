@@ -3,12 +3,13 @@
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
 import Image from "next/image";
-import CoreValues from "./CoreValues";
-import LeaderShipTeam from "./LeaderShip-Team";
 import HeadingStyle from "@/src/components/layout/HeadingStyle";
-import { stats } from "../types/type";
+import { stats } from "./types/type";
+import CoreValues from "./_component/CoreValues";
+import LeaderShipTeam from "./_component/LeaderShip-Team";
 
-const AboutContent = () => {
+
+const AboutClient = () => {
     return (
         <div>
             {/* Hero Banner */}
@@ -102,4 +103,4 @@ const AboutContent = () => {
     );
 };
 
-export default AboutContent;
+export default AboutClient;

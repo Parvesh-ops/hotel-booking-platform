@@ -3,9 +3,9 @@
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
 import { useState } from "react";
-import { menuData } from "../types/type";
+import { menuData } from "./types/type";
 
-const RestaurantContent = () => {
+const RestaurantClient = () => {
     const [openCategory, setOpenCategory] = useState<string | null>("Lunch");
 
     const toggle = (label: string) => {
@@ -86,4 +86,4 @@ const RestaurantContent = () => {
     );
 };
 
-export default RestaurantContent;
+export default RestaurantClient;

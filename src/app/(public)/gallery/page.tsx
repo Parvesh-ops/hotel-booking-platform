@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import GalleryContent from "./_component/GalleryContent";
+import GalleryClient from "./galleryClient";
 
 export const metadata: Metadata = {
     title: "Gallery | The Royal Hotel",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const GalleryPage = () => {
-    return <GalleryContent />;
+    return <GalleryClient />;
 };
 
 export default GalleryPage;

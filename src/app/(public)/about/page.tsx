@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import AboutContent from "./_component/AboutContent";
+import AboutContent from "./aboutClient";
+
 
 export const metadata: Metadata = {
     title: "About Us | The Royal Hotel",
@@ -13,4 +14,4 @@ const About = () => {
     return <AboutContent />;
 };
 
-export default About;
+export default About;

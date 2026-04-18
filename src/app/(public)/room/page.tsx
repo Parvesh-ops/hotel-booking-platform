@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import RoomListContent from "./_component/RoomListContent";
+import RoomClient from "./roomClient";
 
 export const metadata: Metadata = {
     title: "Rooms & Suites |The Royal Hotel",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const RoomsAndSuites = () => {
-    return <RoomListContent />;
+    return <RoomClient />;
 };
 
 export default RoomsAndSuites;

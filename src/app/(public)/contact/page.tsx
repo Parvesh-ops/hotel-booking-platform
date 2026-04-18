@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import ContactContent from "./_component/ContactContent";
+import ContactClient from "./contactClient";
 
 export const metadata: Metadata = {
     title: "Contact Us | The Royal Hotel",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const ContactPage = () => {
-    return <ContactContent />;
+    return <ContactClient />;
 };
 
 export default ContactPage;

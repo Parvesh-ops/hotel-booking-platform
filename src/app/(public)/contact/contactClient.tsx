@@ -6,7 +6,7 @@ import { Button } from "@/src/components/ui/button";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
 
-const ContactContent = () => {
+const ContactClient = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -26,15 +26,15 @@ const ContactContent = () => {
 
     const contactInfo = [
         {
-            icon: <MapPin size={18} className="text-[#FDFDFD] mt-0.5 flex-shrink-0" />,
+            icon: <MapPin size={18} className="text-[#FDFDFD] mt-0.5 shrink-0" />,
             text: "450 Lexicon Avenue, Financial District, New York, NY 10004",
         },
         {
-            icon: <Phone size={18} className="text-[#FDFDFD] flex-shrink-0" />,
+            icon: <Phone size={18} className="text-[#FDFDFD] shrink-0" />,
             text: "+1 (212) 888-ARCH",
         },
         {
-            icon: <Mail size={18} className="text-[#FDFDFD] flex-shrink-0" />,
+            icon: <Mail size={18} className="text-[#FDFDFD] shrink-0" />,
             text: "concierge@arch-ledger.com",
         },
     ];
@@ -168,4 +168,4 @@ const ContactContent = () => {
     );
 };
 
-export default ContactContent;
+export default ContactClient;

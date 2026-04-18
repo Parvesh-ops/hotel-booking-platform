@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import RestaurantContent from "./_component/RestaurantContent";
+import RestaurantClient from "./resturantClient";
 
 export const metadata: Metadata = {
     title: "Restaurant & Menu | The Royal Hotel",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const MenuPage = () => {
-    return <RestaurantContent />;
+    return <RestaurantClient />;
 };
 
 export default MenuPage;

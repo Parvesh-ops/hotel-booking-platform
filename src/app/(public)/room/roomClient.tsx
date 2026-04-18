@@ -3,13 +3,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { rooms } from "../types/type";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
+import { rooms } from "./types/type";
+
 
 const categories = ["ALL", "DELUXE ROOM", "STANDARD ROOM", "ROYAL SUITES"];
 
-const RoomListContent = () => {
+const RoomClient = () => {
     const [activeCategory, setActiveCategory] = useState("ALL");
 
     const filteredRooms =
@@ -53,7 +54,7 @@ const RoomListContent = () => {
                                 className="bg-[#FFFCF5] overflow-hidden shadow-sm"
                             >
                                 {/* Room Image */}
-                                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                                <div className="relative w-full aspect-4/3 overflow-hidden">
                                     <Image
                                         src={room.image}
                                         alt={room.name}
@@ -99,4 +100,4 @@ const RoomListContent = () => {
     );
 };
 
-export default RoomListContent;
+export default RoomClient;
