@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { slides } from "@/lib/carouselData"
+import BookingLanding from "./BookingLanding"
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0)
@@ -17,7 +18,7 @@ const Carousel = () => {
   return (
     <div className="relative w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-[65vh] sm:h-[67vh] lg:h-[87vh] overflow-hidden">
+      <section className="relative w-full h-[65vh] sm:h-[67vh] lg:h-[72vh] overflow-hidden">
 
         {/* Slides */}
         {slides.map((slide, index) => (
@@ -53,12 +54,12 @@ const Carousel = () => {
         </div>
       </section>
 
-      {/* Booking Bar - Overlapping 
+      {/* Booking Bar */}
       <div className="relative w-full -mt-10 sm:-mt-14 md:-mt-18 lg:-mt-22 px-4 z-20 flex justify-center">
-        <div className="w-full max-w-12xl p-4 sm:p-6 md:p-8 lg:p-10 overflow-hidden">
+        <div className="w-full overflow-hidden">
           <BookingLanding />
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
