@@ -4,6 +4,7 @@ import About from '@/src/components/About'
 import RoomsSection from '@/src/components/Rooms'
 import FacilitiesSection from '@/src/components/Facilities'
 import AwardsSection from '@/src/components/Awards'
+import ReviewsSection from '@/src/components/Reviews'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <FacilitiesSection />
       <RoomsSection />
       <AwardsSection />
+      <ReviewsSection />
     </>
   )
 }
