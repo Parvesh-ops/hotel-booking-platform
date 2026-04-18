@@ -5,6 +5,16 @@ import CoreValues from "./_component/CoreValues";
 import LeaderShipTeam from "./_component/LeaderShip-Team";
 import HeadingStyle from "@/src/components/layout/HeadingStyle";
 import { stats } from "./types/type";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us | The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
+
 
 const About = () => {
 

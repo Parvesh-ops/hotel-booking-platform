@@ -5,6 +5,16 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact Us | The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
+
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({

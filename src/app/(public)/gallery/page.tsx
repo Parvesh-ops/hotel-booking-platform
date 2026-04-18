@@ -5,6 +5,15 @@ import Image from "next/image";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
 import { categories, GalleryCategory, galleryImages } from "./types/type";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Gallery | The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
 
 
 const GalleryPage = () => {

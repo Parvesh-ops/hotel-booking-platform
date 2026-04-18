@@ -6,6 +6,16 @@ import Link from "next/link";
 import { rooms } from "./types/type";
 import PageBanner from "@/src/components/PageBanner";
 import Container from "@/src/components/ui/container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Rooms & Suites |The Royal Hotel",
+    description: "Experience luxury and comfort in the heart of Nepal. Discover our story, amenities, and commitment to exceptional hospitality.",
+    icons: {
+        icon: '/HotelLogo.png',
+    },
+};
+
 
 const categories = ["ALL", "DELUXE ROOM", "STANDARD ROOM", "ROYAL SUITES"];
 
