@@ -4,14 +4,10 @@ import Image from "next/image";
 import CoreValues from "./_component/CoreValues";
 import LeaderShipTeam from "./_component/LeaderShip-Team";
 import HeadingStyle from "@/src/components/layout/HeadingStyle";
+import { stats } from "./types/type";
 
 const About = () => {
-    const stats = [
-        { number: "20", label: "Team Members", suffix: "+" },
-        { number: "2026", label: "Years of Establishment", suffix: "" },
-        { number: "400", label: "Happy Guests", suffix: "+" },
-        { number: "50", label: "Awards & Recognition", suffix: "+" },
-    ];
+
 
     return (
         <div>
