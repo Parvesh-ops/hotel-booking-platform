@@ -5,6 +5,7 @@ import RoomsSection from '@/src/components/Rooms'
 import FacilitiesSection from '@/src/components/Facilities'
 import AwardsSection from '@/src/components/Awards'
 import ReviewsSection from '@/src/components/Reviews'
+import BenefitsSection from '@/src/components/Benifits'
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <RoomsSection />
       <AwardsSection />
       <ReviewsSection />
+      <BenefitsSection />
     </>
   )
 }
